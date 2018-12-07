@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ef5c30",
+    "navigationBarTitleText": "生成分享海报",
+    "navigationBarTextStyle": "white"
+  }
+}

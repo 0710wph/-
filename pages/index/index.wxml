@@ -1,0 +1,20 @@
+<view class='page'>
+  <text class='title'>{{title}}</text>
+  <text class='des'>{{ des }}</text>
+  <text class='shareText'>分享给好友</text>
+  <view class='imgBox'>
+    <button class='share-but' open-type="share"><image  mode='aspectFit' src="{{wechat}}" class='img'></image></button>
+    <view bindtap='formSubmit'  data-title-type='{{title}}'  data-des-type='{{des}}'><image  mode='aspectFit' class='img' src="{{quan}}"></image></view >
+  </view>
+
+  <!--生成海报  -->
+  <view class='imagePathBox' hidden="{{maskHidden == false}}">
+    <image src="{{imagePath}}" class='shengcheng' mode='aspectFit'></image>
+    <button class='baocun' bindtap='baocun'>保存图片</button>
+  </view>
+  <view hidden="{{maskHidden == false}}" class="mask"></view> 
+  <view class="canvas-box">
+      <canvas  style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas"/>
+  </view>
+</view>
+
